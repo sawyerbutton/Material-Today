@@ -5,8 +5,9 @@
   <mat-icon class="example-icon">verified_user</mat-icon>
 </mat-toolbar>
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" opened>
-    Start Content
+  <mat-sidenav mode="side" opened #sidenav>
+    <button mat-button>Close Side</button>
+    <app-left-control></app-left-control>
   </mat-sidenav>
   <mat-sidenav-content>
     Main Content

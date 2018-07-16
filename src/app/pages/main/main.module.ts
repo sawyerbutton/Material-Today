@@ -4,6 +4,7 @@ import { MainComponent } from './main.component';
 import {MainRoutingModule} from './main-routing.module';
 import {SharedModuleModule} from '../../shared/shared-module/shared-module.module';
 import { LeftControlComponent } from './left-control/left-control.component';
+import { ListComponent } from './left-control/list/list.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,7 @@ import { LeftControlComponent } from './left-control/left-control.component';
     MainRoutingModule,
     SharedModuleModule
   ],
-  declarations: [MainComponent, LeftControlComponent],
+  declarations: [MainComponent, LeftControlComponent, ListComponent],
   exports: [MainComponent]
 })
 export class MainModule { }

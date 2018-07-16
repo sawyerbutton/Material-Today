@@ -5,6 +5,8 @@ import { AppRoutingModule} from './app-routing.module';
 import { SetupModule} from './pages/setup/setup.module';
 import { AppComponent } from './app.component';
 import { MainModule} from './pages/main/main.module';
+import {ListService} from './services/list/list.service';
+import {TodoService} from './services/todo/todo.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { MainModule} from './pages/main/main.module';
     SetupModule,
     MainModule
   ],
-  providers: [],
+  providers: [ListService, TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

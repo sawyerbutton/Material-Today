@@ -6,6 +6,7 @@ import { MatMomentDateModule} from '@angular/material-moment-adapter';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material';
 import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatBadgeModule} from '@angular/material/badge';
 @NgModule({
   imports: [
     CommonModule,
@@ -21,7 +22,8 @@ import { MatSidenavModule} from '@angular/material/sidenav';
     MatToolbarModule,
     FormsModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatBadgeModule
   ]
 })
 export class SharedModuleModule { }

@@ -1,3 +1,20 @@
-<p>
-  left-control works!
-</p>
+<div>
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title>{{userName}} </mat-card-title>
+      <mat-card-subtitle>{{userTime}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-button><mat-icon>settings</mat-icon></button>
+      <button mat-button><mat-icon>calendar_today</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>
+  <div style="text-align: center">
+    <button mat-raised-button color="primary"
+            matBadge="1" matBadgePosition="before" matBadgeColor="accent">
+      <mat-icon>add_to_queue</mat-icon>
+      Add new Calendar
+    </button>
+  </div>
+</div>
